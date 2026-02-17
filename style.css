@@ -1,0 +1,78 @@
+:root {
+    --primary: #2c5f2d;
+    --accent: #d4af37;
+    --bg: #f4f7f6;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    direction: rtl;
+}
+
+.card {
+    background: var(--white);
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+h2 { color: var(--primary); text-align: center; }
+
+.date-display { text-align: center; color: #666; margin-bottom: 15px; font-weight: bold; }
+
+.input-group { display: flex; gap: 8px; margin-bottom: 20px; }
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus { border-color: var(--primary); }
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.add-btn { background: var(--primary); color: white; padding: 0 20px; }
+
+.section-title { font-weight: bold; color: #555; margin: 20px 0 10px; border-right: 4px solid var(--accent); padding-right: 10px; }
+
+ul { list-style: none; padding: 0; }
+
+li {
+    background: #fff;
+    border: 1px solid #eee;
+    margin-bottom: 8px;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.done-item { background: #e8f5e9; color: #4caf50; text-decoration: line-through; }
+
+.delete-btn { background: #ffeded; color: #ff4d4d; padding: 5px 10px; font-size: 12px; }
+
+.progress-container { background: #eee; height: 12px; border-radius: 6px; margin: 15px 0; overflow: hidden; }
+
+.progress-fill { background: var(--primary); height: 100%; width: 0%; transition: 0.5s; }
+
+.history-card { background: #fffdf5; border: 1px solid var(--accent); padding: 15px; border-radius: 15px; margin-top: 30px; }
+
+.history-item { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee; font-size: 0.9rem; }

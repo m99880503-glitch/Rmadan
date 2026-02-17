@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مفكرة رمضان الذكية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>🌙 مفكرة رمضان الذكية</h2>
+    <div id="todayDate" class="date-display"></div>
+
+    <div class="input-group">
+        <input type="text" id="taskInput" placeholder="أضف مهمة رمضانية...">
+        <button class="add-btn" onclick="addTask()">إضافة</button>
+    </div>
+
+    <div class="progress-container">
+        <div id="progressFill" class="progress-fill"></div>
+    </div>
+
+    <div class="section-title">⏳ مهام بانتظارك</div>
+    <ul id="pendingList"></ul>
+
+    <div class="section-title">✅ تم الإنجاز</div>
+    <ul id="completedList"></ul>
+
+    <div class="history-card">
+        <h3>📊 سجل الأيام السابقة</h3>
+        <div id="historyList"></div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
